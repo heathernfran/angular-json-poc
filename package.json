@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Proof of concept for getting and parsing JSON data using Angularjs.",
   "main": "js/server.js",
-  "engine": {
+  "engines": {
     "node": "0.12.2"
   },
   "scripts": {
