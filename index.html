@@ -12,25 +12,22 @@
   </head>
   <body>
 
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="/">Home</a></li>
+      <li role="presentation"><a href="partials/sf-public-art.html">SF Public Art</a></li>
+      <li role="presentation"><a href="partials/"></a></li>
+    </ul>
+
     <p>
       Demo using Angular to get json-formatted data.  Additional data sets are available at <a href="https://data.sfgov.org/">SF OpenData</a>.
     </p>
 
-    <div ng-app="jsonApp" ng-controller="jsonDataCtrl">
+    <div ng-app="jsonApp">
 
-      <div ng-repeat="artwork in jsonData">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-3">{{ artwork.artist }}</div>
-            <div class="col-md-3">{{ artwork.title }}</div>
-            <div class="col-md-3">{{ artwork.medium }}</div>
-            <div class="col-md-3">{{ artwork.location_description }}</div>
-          </div>
-        </div>
-      </div>
 
     </div>
 
   </body>
+  <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
 </html>
