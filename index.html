@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular proof of concept</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+  </head>
+  <body>
+
+    <p>
+      Demo using Angular to get json-formatted data.  Additional data sets are available at <a href="https://data.sfgov.org/">SF OpenData</a>.
+    </p>
+
+    <div ng-app="jsonApp" ng-controller="jsonDataCtrl">
+
+      <div ng-repeat="artwork in jsonData">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">{{ artwork.artist }}</div>
+            <div class="col-md-3">{{ artwork.title }}</div>
+            <div class="col-md-3">{{ artwork.medium }}</div>
+            <div class="col-md-3">{{ artwork.location_description }}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  <script src="js/controllers.js"></script>
+</html>

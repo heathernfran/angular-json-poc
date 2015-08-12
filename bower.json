@@ -1,0 +1,19 @@
+{
+  "name": "angular-json-poc",
+  "version": "0.0.0",
+  "authors": [
+    "Heather Frantisak <hfrantisak@mvnp.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5"
+  }
+}
